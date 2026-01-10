@@ -1,0 +1,27 @@
+function range(start, end) {
+  if (end !== undefined) {
+    return getRange(start, end)
+  }
+  
+  return function getEnd(end2) {
+    return getRange(start, end2)
+  }
+  
+  function getRange(from, to) {
+    if (to < from) return [];
+    return Array(to - from + 1).fill(0).map((_, i) => i + from);
+  }
+}
+
+range(3, 3);
+range(3, 8);
+range(3, 0);
+
+var start3 = range(3);
+var start4 = range(4);
+
+start3(3);
+start3(8);
+start3(0);
+
+start4(6);
