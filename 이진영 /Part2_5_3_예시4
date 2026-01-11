@@ -1,0 +1,13 @@
+var greeting;
+
+console.log(greeting); // [Function: greeting]
+
+function greeting() {
+  console.log("안녕하세요!");
+}
+
+typeof greeting; // 'function'
+
+var greeting = "안녕하세요!";
+
+typeof greeting; // 'string'
