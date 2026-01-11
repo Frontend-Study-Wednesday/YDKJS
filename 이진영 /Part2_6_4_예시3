@@ -1,0 +1,23 @@
+if (true) {
+  function ask() {
+    console.log("호출 1")
+  }
+}
+
+if (true) {
+  function ask() {
+    console.log("호출 2")
+  }
+}
+
+for (let i = 0; i < 5; i++) {
+  function ask() {
+    console.log("호출 3")
+  }
+}
+
+ask();
+
+function ask() {
+  console.log("호출 4")
+}
