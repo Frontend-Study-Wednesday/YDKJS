@@ -1,0 +1,11 @@
+// 3.2 변수 섀도잉
+var studentName = "Jimin";
+
+function printStudent(studentName) {
+  studentName = studentName.toUpperCase();
+  console.log(studentName);
+}
+
+printStudent("Bora"); // BORA
+printStudent(studentName); // JIMIN
+console.log(studentName); // Jimin
